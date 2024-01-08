@@ -308,11 +308,15 @@ else
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+            <?php  if (!isset($ss,$pt,$sec,$uname,$pwd)){
+                echo "No data present";
+              } else { ?> 
                 <h6>Smtp Server: <?php echo $ss; ?></h6>
                 <h6>Port: <?php echo $pt; ?></h6>
                 <h6>Security: <?php echo $sec; ?></h6>
                 <h6>Username: <?php echo $uname; ?></h6>
                 <h6>Password: <?php echo $pwd; ?></h6>
+                <?php } ?> 
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
