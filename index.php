@@ -471,7 +471,7 @@ if (isset($_POST['submit'])){
     $mail->isHTML(true);
     $mail->Subject=$_POST['subject'];
     $temp = filter_input(INPUT_POST, 'temp', FILTER_SANITIZE_STRING);
-    if (isset($_POST['temp']))
+    if (isset($_POST['temp']) && file_exists("template/${temp}_temp.html"))
     {
     $html = file_get_contents("template/${temp}_temp.html");
     $html = str_replace("{message}",$message,$html);
