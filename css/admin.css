@@ -1,0 +1,51 @@
+.right-panel{ align-self:self-end}
+ol, ul, dl { margin-top: 12px }
+#btn{ width:100% }
+#settings , #info{ opacity:0.8 }
+#settings:hover , #info:hover{ opacity:1; color:#fff }
+.modal-body h6{ margin-top:17px }
+#pills-tab{ color:#fff }
+  .nav-pill .nav-link {
+      background: none;
+      border: 0;
+      border-radius: 7px; }
+  .nav-pill .nav-link.active,
+  .nav-pill .show > .nav-link {
+      color: #19191a;
+      background-color: #FF971D; }
+  .nav-pill {
+      border-radius: 7px;
+      margin-bottom: .5rem; }
+      ol, ul, dl {
+        margin-top: 12px;
+          }
+  input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+  }
+  input[type=number]{
+    -moz-appearance: textfield;
+  }
+  .card-body-small{
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 1rem 1.9rem;
+  }
+  .content-inner-small {
+    padding: calc(var(--bs-gutter-x, .5rem) * 3);
+  }
+  @media screen and (max-width:760px) {
+    .content-inner-small {
+      padding: calc(var(--bs-gutter-x, .25rem) * 3);
+    }
+    .card-body-small{
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 0.5rem 0.7rem;
+  }
+  }
+.form{
+    transition: display 3s ease-out;
+  }
