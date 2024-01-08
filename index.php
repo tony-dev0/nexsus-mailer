@@ -24,8 +24,18 @@ $pwd2 = $pwd1[strlen($pwd1)-1];
 $pwd = $pwd0[0].'*****'.$pwd2;
 }
 else{
-  echo "<script>document.addEventListener('DOMContentLoaded', () => { alert('DataBase Info Unable to display') }) </script>";
-}
+  echo"<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(()=>{
+      alert('DataBase Info Unable to display')
+    },2000)
+    setTimeout(()=>{
+      if(window.innerWidth < 760){
+      swal('Use Desktop view for better experience') 
+    }},5000)
+  });
+     </script>";
+  }
 $sql = "SELECT status,config_name FROM email_config"; 
 $result = $conn->query($sql); 
 if ($result->num_rows > 0)  
